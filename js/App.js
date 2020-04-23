@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         meta: {
           title: "Grupos de WhatsApp - Vagas",
           description:
-            "Acesse vagas exclusivas em todo estado, postadas diariamente"
-        }
+            "Acesse vagas exclusivas em todo estado, postadas diariamente",
+        },
       },
       title: "Grupos de Whatsapp",
       headline: "Acesse grupos de emprego exclusivos",
@@ -18,25 +18,26 @@ document.addEventListener("DOMContentLoaded", () => {
         email: "E-mail",
         emailPlaceholder: "Seu e-mail",
         position: "Vaga de interesse",
-        positionPlaceholder: "Ex. Vendedor",
+        positionPlaceholder: "Ex. Vendedor, Atendente",
+        state: "Estado",
         group: "Grupo",
         purpose: "Objetivo",
         purposeJobSeeker: "Conseguir um emprego",
-        purposeRecruiter: "Recrutar candidatos"
+        purposeRecruiter: "Recrutar candidatos",
       },
       ctaButton: "Acessar",
       validation: {
         errorEmptyField:
           "Por favor, preencha todos os campos antes de prosseguir!",
-        errorInvalidEmail: "Por favor, insira um email válido!"
-      }
+        errorInvalidEmail: "Por favor, insira um email válido!",
+      },
     },
     eng: {
       facebook: {
         meta: {
           title: "Whatsapp Group - Jobs",
-          description: "Access exclusive job positions, posted daily"
-        }
+          description: "Access exclusive job positions, posted daily",
+        },
       },
       title: "Whatsapp Groups",
       headline: "Access our Job Groups",
@@ -45,20 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
         namePlaceholder: "Your name",
         email: "E-mail",
         emailPlaceholder: "Your e-mail",
+        state: "State",
         position: "Position",
         positionPlaceholder: "Eg. Receptionist",
         group: "Group",
         purpose: "Purpose",
         purposeJobSeeker: "Get a Job",
-        purposeRecruiter: "Recruit Candidates"
+        purposeRecruiter: "Recruit Candidates",
       },
       ctaButton: "Next",
       validation: {
         errorEmptyField:
           "Please, fill all of the fields below before proceeding!",
-        errorInvalidEmail: "Please, insert a valid email!"
-      }
-    }
+        errorInvalidEmail: "Please, insert a valid email!",
+      },
+    },
   };
 
   // Firebase initialization ========================================
@@ -73,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     storageBucket: "app-bo.appspot.com",
     messagingSenderId: "948796332411",
     appId: "1:948796332411:web:4136f6ad50c6a1730245de",
-    measurementId: "G-W0TFNRTQRZ"
+    measurementId: "G-W0TFNRTQRZ",
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -96,11 +98,11 @@ document.addEventListener("DOMContentLoaded", () => {
     es: [
       {
         name: "Emprego Urgente ES - #1",
-        url: "https://chat.whatsapp.com/K3mKt9yREN8JUBfQUN6Y2r"
+        url: "https://chat.whatsapp.com/K3mKt9yREN8JUBfQUN6Y2r",
       },
       {
         name: "Emprego Urgente ES - #2",
-        url: "https://chat.whatsapp.com/HJV3zqgoU0W1ZpEa6Rtdym"
+        url: "https://chat.whatsapp.com/HJV3zqgoU0W1ZpEa6Rtdym",
       },
       // {
       //   name: "Emprego Urgente ES - #3",
@@ -108,17 +110,17 @@ document.addEventListener("DOMContentLoaded", () => {
       // },
       {
         name: "Emprego Urgente ES - #4",
-        url: "https://chat.whatsapp.com/GIYWbj4hxr8JtkoI4XXSrE"
+        url: "https://chat.whatsapp.com/GIYWbj4hxr8JtkoI4XXSrE",
       },
       {
         name: "Emprego Urgente ES - #5",
-        url: "https://chat.whatsapp.com/KlQy0bGSrcQJthT3AopDCM"
-      }
+        url: "https://chat.whatsapp.com/KlQy0bGSrcQJthT3AopDCM",
+      },
     ],
     sp: [
       {
         name: "Emprego Urgente SP - #1",
-        url: "https://chat.whatsapp.com/DITRy3cquo38EBkdacf8DS"
+        url: "https://chat.whatsapp.com/DITRy3cquo38EBkdacf8DS",
       },
       // {
       //   name: "Emprego Urgente SP - #2",
@@ -126,12 +128,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // },
       {
         name: "Emprego Urgente SP - #3",
-        url: "https://chat.whatsapp.com/I5wVYy32fKDDKSZldDRa3U"
+        url: "https://chat.whatsapp.com/I5wVYy32fKDDKSZldDRa3U",
       },
       {
         name: "Emprego Urgente SP - #4",
-        url: "https://chat.whatsapp.com/GnN84IIcvd15rJs09ukqP7"
-      }
+        url: "https://chat.whatsapp.com/GnN84IIcvd15rJs09ukqP7",
+      },
     ],
     bh: [
       // {
@@ -140,12 +142,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // },
       {
         name: "Emprego Urgente BH - #2",
-        url: "https://chat.whatsapp.com/CKcZNtHDQHSJSUgLUUt5cz"
+        url: "https://chat.whatsapp.com/CKcZNtHDQHSJSUgLUUt5cz",
       },
       {
         name: "Emprego Urgente BH - #3",
-        url: "https://chat.whatsapp.com/GHipWCH8e45Dk2pDxhREsC"
-      }
+        url: "https://chat.whatsapp.com/GHipWCH8e45Dk2pDxhREsC",
+      },
     ],
     vancouver: [
       // {
@@ -154,18 +156,34 @@ document.addEventListener("DOMContentLoaded", () => {
       // },
       {
         name: "Jobs Vancouver #2",
-        url: "https://chat.whatsapp.com/K2TKkbtxO8C7BmNDW7kTn4"
+        url: "https://chat.whatsapp.com/K2TKkbtxO8C7BmNDW7kTn4",
       },
       {
         name: "Jobs Vancouver #3",
-        url: "https://chat.whatsapp.com/Hf3Z3LGBd4QFfBl86vLo7D"
-      }
-    ]
+        url: "https://chat.whatsapp.com/Hf3Z3LGBd4QFfBl86vLo7D",
+      },
+    ],
   };
 
   if (!state) {
     state = "es";
+
     language = "ptbr";
+
+    // add state dropdown
+
+    document.querySelector("#state-dropdown-container").innerHTML = `
+    <label for="state-select">${languageStrings[language].input.state}</label>
+    <select id="state-select">
+      <option value="es">ES</option>
+      <option value="sp">SP</option>
+      <option value="bh">MG</option>
+    </select>`;
+
+    document.querySelector("#state-select").addEventListener("change", () => {
+      state = document.querySelector("#state-select option:checked").value;
+      HelperClass.populateGroups(groups, state);
+    });
   }
 
   const strings = languageStrings[language];
@@ -218,18 +236,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // create and inject options decorator
 
-  const groupSelectDropdown = document.querySelector("#group-select");
-
-  groups[state].forEach(({ name, url }) => {
-    let options = `<option value="${url}"
-    >${name}</option`;
-
-    groupSelectDropdown.innerHTML += options;
-  });
+  HelperClass.populateGroups(groups, state);
 
   const leadForm = document.querySelector("#form-signup");
 
-  leadForm.addEventListener("submit", e => {
+  leadForm.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("submitting form data");
 
@@ -238,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
       email: document.querySelector("#email").value,
       position: document.querySelector("#position").value,
       group: document.querySelector("#group-select option:checked").value,
-      purpose: document.querySelector("input[name=purpose]:checked").value
+      purpose: document.querySelector("input[name=purpose]:checked").value,
     };
 
     //basic validation
