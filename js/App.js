@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log(state, language);
 
-  const groups = {
+  let groups = {
     es: [
       // {
       //   name: "Emprego Urgente ES - #1",
@@ -179,9 +179,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
   };
 
+  // shuffle all array groups, so we can better balance its filling
+  for (const key of Object.keys(groups)) {
+    groups[key] = HelperClass.shuffleArray(groups[key]);
+  }
+
   if (!state) {
     state = "es";
-
     language = "ptbr";
 
     // add state dropdown
