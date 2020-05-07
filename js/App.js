@@ -100,10 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
       //   name: "Emprego Urgente ES - #1",
       //   url: "https://chat.whatsapp.com/K3mKt9yREN8JUBfQUN6Y2r",
       // },
-      {
-        name: "Emprego Urgente ES - #2",
-        url: "https://chat.whatsapp.com/HJV3zqgoU0W1ZpEa6Rtdym",
-      },
+      // {
+      //   name: "Emprego Urgente ES - #2",
+      //   url: "https://chat.whatsapp.com/HJV3zqgoU0W1ZpEa6Rtdym",
+      // },
       // {
       //   name: "Emprego Urgente ES - #3",
       //   url: "https://chat.whatsapp.com/E4dtl6wK6xw4uBfuJw7MNW"
@@ -133,6 +133,20 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         name: "Emprego Urgente SP - #4",
         url: "https://chat.whatsapp.com/GnN84IIcvd15rJs09ukqP7",
+      },
+    ],
+    rj: [
+      {
+        name: "EmpregoUrgente.com RJ #1",
+        url: "https://chat.whatsapp.com/BWONdvqquihKnUqGVhMLb1",
+      },
+      {
+        name: "EmpregoUrgente.com RJ #2",
+        url: "https://chat.whatsapp.com/EdF7jAo0zTsHWubeiZ4CLv",
+      },
+      {
+        name: "EmpregoUrgente.com RJ #3",
+        url: "https://chat.whatsapp.com/BPMsLkCLY257otEW7NFE9u",
       },
     ],
     bh: [
@@ -178,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <option value="es">ES</option>
       <option value="sp">SP</option>
       <option value="bh">MG</option>
+      <option value="rj">RJ</option>
     </select>`;
 
     document.querySelector("#state-select").addEventListener("change", () => {
