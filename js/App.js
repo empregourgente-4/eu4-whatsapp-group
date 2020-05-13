@@ -104,10 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
       //   name: "Emprego Urgente ES - #2",
       //   url: "https://chat.whatsapp.com/HJV3zqgoU0W1ZpEa6Rtdym",
       // },
-      // {
-      //   name: "Emprego Urgente ES - #3",
-      //   url: "https://chat.whatsapp.com/E4dtl6wK6xw4uBfuJw7MNW"
-      // },
+      {
+        name: "Emprego Urgente ES - #3",
+        url: "https://chat.whatsapp.com/E4dtl6wK6xw4uBfuJw7MNW",
+      },
       {
         name: "Emprego Urgente ES - #4",
         url: "https://chat.whatsapp.com/GIYWbj4hxr8JtkoI4XXSrE",
@@ -122,10 +122,10 @@ document.addEventListener("DOMContentLoaded", () => {
       //   name: "Emprego Urgente SP - #1",
       //   url: "https://chat.whatsapp.com/DITRy3cquo38EBkdacf8DS",
       // },
-      {
-        name: "Emprego Urgente SP - #2",
-        url: "https://chat.whatsapp.com/IpyZFwgaiDBAnGDTMLmV4i",
-      },
+      // {
+      //   name: "Emprego Urgente SP - #2",
+      //   url: "https://chat.whatsapp.com/IpyZFwgaiDBAnGDTMLmV4i",
+      // },
       {
         name: "Emprego Urgente SP - #3",
         url: "https://chat.whatsapp.com/I5wVYy32fKDDKSZldDRa3U",
@@ -150,17 +150,25 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     ],
     bh: [
-      // {
-      //   name: "Emprego Urgente BH - #1",
-      //   url: "https://chat.whatsapp.com/GAyfZlKAfmk006WxsLw5Ds"
-      // },
       {
-        name: "Emprego Urgente BH - #2",
-        url: "https://chat.whatsapp.com/CKcZNtHDQHSJSUgLUUt5cz",
+        name: "Emprego Urgente BH - #1",
+        url: "https://chat.whatsapp.com/GAyfZlKAfmk006WxsLw5Ds",
       },
+      // {
+      //   name: "Emprego Urgente BH - #2",
+      //   url: "https://chat.whatsapp.com/CKcZNtHDQHSJSUgLUUt5cz",
+      // },
       {
         name: "Emprego Urgente BH - #3",
         url: "https://chat.whatsapp.com/GHipWCH8e45Dk2pDxhREsC",
+      },
+      {
+        name: "Emprego Urgente BH - #4",
+        url: "https://chat.whatsapp.com/Erxuy7np1vvFstNALvkXiW",
+      },
+      {
+        name: "Emprego Urgente BH - #4",
+        url: "https://chat.whatsapp.com/Gjag48MTQnZE2S8enRpsxW",
       },
     ],
     vancouver: [
